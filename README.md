@@ -12,3 +12,14 @@ aplicado é o mobile;
 - Os dados do veiculo, deverão ser consumido da API;
 https://run.mocky.io/v3/24fda311-d8b1-49ca-b35d-74ea1949020d, que retorna os
 veiculos através de uma requisição via GET.
+
+## Executar localmente:
+
+```bash 
+$ ng serve
+```
+
+## Executar remotamente:
+```bash 
+ https://lista-de-carros-2.rabelodigital.com/
+```
