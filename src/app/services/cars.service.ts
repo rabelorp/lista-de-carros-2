@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Cars } from '../models/cars.model';
+import { Cars } from 'src/app/models/cars.model';
 
-const baseUrl = 'https://run.mocky.io/v3/24fda311-d8b1-49ca-b35d-74ea1949020d';
+const baseUrl =
+  'https://sp.vtex.com/search-api/v1/localizaseminovos/api/search/tipo/seminovo';
 
 @Injectable({
   providedIn: 'root',
@@ -13,8 +14,8 @@ export class CarsService {
 
   constructor(private http: HttpClient) {}
 
-  getAll(): Observable<Cars> {
+  getAll(page = 1): Observable<Cars> {
     this.loading = true;
-    return this.http.get<Cars>(baseUrl);
+    return this.http.get<Cars>(`${baseUrl}?map=tipo&page=${page}`);
   }
 }

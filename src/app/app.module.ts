@@ -8,7 +8,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './layout/layout.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './components/loading/loading.component';
-
 @NgModule({
   declarations: [AppComponent, LoadingComponent],
   imports: [

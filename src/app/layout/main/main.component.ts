@@ -9,8 +9,11 @@ import { LoadingService } from 'src/app/services/loading.service';
   styleUrls: ['./main.component.scss'],
 })
 export class MainComponent {
-  cars?: Cars[];
+  cars: Cars[] | undefined;
   total: number | undefined;
+  sum = 24;
+  page = 1;
+  currentList!: any | undefined;
 
   constructor(
     private carsService: CarsService,
@@ -18,16 +21,27 @@ export class MainComponent {
   ) {}
 
   ngOnInit(): void {
-    this.retrieveCars();
+    this.retrieveCars(this.page);
   }
 
-  retrieveCars(): void {
-    this.carsService.getAll().subscribe({
+  retrieveCars(page: number): void {
+    this.carsService.getAll(page).subscribe({
       next: (data) => {
-        this.total = data.resultados.total;
-        this.cars = data.resultados.data;
+        this.total = data.total;
+        this.currentList = data.products;
+        if (page > 1) {
+          return this.cars?.push(...this.currentList);
+        } else {
+          return (this.cars = data.products);
+        }
       },
       error: (e) => console.error(e),
     });
+  }
+
+  onScrollDown() {
+    this.page = this.page + 1;
+    this.sum = this.sum + 24;
+    this.retrieveCars(this.page);
   }
 }
