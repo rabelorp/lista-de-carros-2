@@ -8,6 +8,7 @@ const baseUrl =
 
 @Injectable({
   providedIn: 'root',
+  s,
 })
 export class CarsService {
   loading = false;

@@ -1,49 +1,114 @@
-<main class="bg-slate dark:bg-gray-800 ">
+<main class="bg-slate dark:bg-gray-800">
   <div class="container mx-auto bg-slate">
-    <div class="container  px-6 py-8 ">
-      <nav class="flex my-2 " aria-label="Breadcrumb" >
-        <ol class="inline-flex items-center space-x-1 md:space-x-3 ">
-          <li class="inline-flex items-center bg-white rounded-md  px-2 py-1 border border-purple">
-            <a href="#" class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+    <div class="container px-6 py-8">
+      <nav class="flex my-2" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li
+            class="inline-flex items-center bg-white rounded-md px-2 py-1 border border-purple"
+          >
+            <a
+              href="#"
+              class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
               Home
             </a>
           </li>
           <li>
-            <div class="flex items-center  bg-white rounded-md  px-2 py-1 border border-purple">
-              <a href="#" class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">Veiculos</a>
+            <div
+              class="flex items-center bg-white rounded-md px-2 py-1 border border-purple"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+                >Veiculos</a
+              >
             </div>
           </li>
         </ol>
       </nav>
 
-      <span class="flex text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Veículos encontrados</span>
-      <hr class="w-10 h-1  bg-purple border-0 rounded md:my-1 dark:bg-gray-700">
+      <span
+        class="flex text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"
+        >Veículos encontrados</span
+      >
+      <hr
+        class="w-10 h-1 bg-purple border-0 rounded md:my-1 dark:bg-gray-700"
+      />
 
-      <nav class="flex   flex-wrap my-0 md:place-content-between"  >
-        <span class="flex text-lg font-normal tracking-tight text-gray-900 dark:text-white"> {{ total }}  carros encontrados</span>
-        <ol class="inline-flex items-center space-x-1 md:space-x-3 ">
-          <li class="inline-flex items-center bg-white rounded-md  px-3 py-2  mx-2 order-last md:order-first ">
-            <a href="#" class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-              <svg class="mx-1" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.856063 3.14502L3.64606 0.355024C3.83606 0.165024 4.15606 0.165024 4.34606 0.355024L7.13606 3.14502C7.45606 3.45502 7.23606 3.99502 6.78606 3.99502H4.99606V10.005C4.99606 10.555 4.54606 11.005 3.99606 11.005C3.44606 11.005 2.99606 10.555 2.99606 10.005V3.99502H1.20606C0.756063 3.99502 0.536063 3.45502 0.856063 3.14502ZM10.9961 8.00502V14.015H12.7961C13.2361 14.015 13.4661 14.555 13.1461 14.865L10.3561 17.645C10.1561 17.835 9.84606 17.835 9.64606 17.645L6.85606 14.865C6.53606 14.555 6.75606 14.015 7.20606 14.015H8.99606V8.00502C8.99606 7.45502 9.44606 7.00502 9.99606 7.00502C10.5461 7.00502 10.9961 7.45502 10.9961 8.00502Z" fill="#7D28F7"/>
-                </svg>
-                Mais relevantes
+      <nav class="flex flex-wrap my-0 md:place-content-between">
+        <span
+          class="flex text-lg font-normal tracking-tight text-gray-900 dark:text-white"
+        >
+          {{ total }} carros encontrados</span
+        >
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li
+            class="inline-flex items-center bg-white rounded-md px-3 py-2 mx-2 order-last md:order-first"
+          >
+            <a
+              href="#"
+              class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+            >
+              <svg
+                class="mx-1"
+                width="14"
+                height="18"
+                viewBox="0 0 14 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.856063 3.14502L3.64606 0.355024C3.83606 0.165024 4.15606 0.165024 4.34606 0.355024L7.13606 3.14502C7.45606 3.45502 7.23606 3.99502 6.78606 3.99502H4.99606V10.005C4.99606 10.555 4.54606 11.005 3.99606 11.005C3.44606 11.005 2.99606 10.555 2.99606 10.005V3.99502H1.20606C0.756063 3.99502 0.536063 3.45502 0.856063 3.14502ZM10.9961 8.00502V14.015H12.7961C13.2361 14.015 13.4661 14.555 13.1461 14.865L10.3561 17.645C10.1561 17.835 9.84606 17.835 9.64606 17.645L6.85606 14.865C6.53606 14.555 6.75606 14.015 7.20606 14.015H8.99606V8.00502C8.99606 7.45502 9.44606 7.00502 9.99606 7.00502C10.5461 7.00502 10.9961 7.45502 10.9961 8.00502Z"
+                  fill="#7D28F7"
+                />
+              </svg>
+              Mais relevantes
             </a>
           </li>
           <li>
-            <div class="flex items-center  bg-white rounded-md  px-3 py-2 ">
-              <a href="#" class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H7V7H0V0ZM16 0H9V7H16V0ZM16 9H9V16H16V9ZM7 9H0V16H7V9Z" fill="#9B51E0"/>
+            <div class="flex items-center bg-white rounded-md px-3 py-2">
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 0H7V7H0V0ZM16 0H9V7H16V0ZM16 9H9V16H16V9ZM7 9H0V16H7V9Z"
+                    fill="#9B51E0"
+                  />
                 </svg>
               </a>
             </div>
           </li>
-          <li class="hidden md:block ">
-            <div class="flex items-center  bg-white rounded-md  px-3 py-2 ">
-              <a href="#" class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
-                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0H0V4H5V0ZM17 1H6V3H17V1ZM17 7H6V9H17V7ZM6 13H17V15H6V13ZM0 6H5V10H0V6ZM5 12H0V16H5V12Z" fill="#7D28F7"/>
+          <li class="hidden md:block">
+            <div class="flex items-center bg-white rounded-md px-3 py-2">
+              <a
+                href="#"
+                class="inline-flex items-center text-sm font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+              >
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 0H0V4H5V0ZM17 1H6V3H17V1ZM17 7H6V9H17V7ZM6 13H17V15H6V13ZM0 6H5V10H0V6ZM5 12H0V16H5V12Z"
+                    fill="#7D28F7"
+                  />
                 </svg>
               </a>
             </div>
@@ -52,109 +117,266 @@
       </nav>
     </div>
 
-    <div class="container flex flex-wrap place-content-between "  *ngIf="this.loadingService.loading$ | async">
-
-        <div *repeat="24"  class=" m-6  max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-
-          <figure class="relative max-w-sm  cursor-pointer ">
-            <a href="#">
-              <img  src="/assets/foto.png" alt="Descrição do carro">
-            </a>
-            <figcaption class="absolute px-4 text-lg   bottom-6 bg-white rounded-r-md">
-              <div class="flex flex-wrap  items-center  ">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6.03338C3 3.25064 5.25064 1 8.03338 1C10.8161 1 13.0668 3.25064 13.0668 6.03338C13.0668 9.03184 9.88855 13.1664 8.58706 14.7411C8.29944 15.0863 7.77453 15.0863 7.4869 14.7411C6.17822 13.1664 3 9.03184 3 6.03338ZM6.23575 6.03339C6.23575 7.02568 7.04109 7.83102 8.03339 7.83102C9.02568 7.83102 9.83102 7.02568 9.83102 6.03339C9.83102 5.04109 9.02568 4.23575 8.03339 4.23575C7.04109 4.23575 6.23575 5.04109 6.23575 6.03339Z" fill="#7D28F7"/>
-                </svg>
-                ______
-                </div>
-            </figcaption>
-          </figure>
-
-          <div class="px-5 pb-5 ">
-              <a href="#">
-                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">______</h5>
-              </a>
-              <div class="flex flex-wrap text-sm items-center mt-2.5 mb-5">
-                ______
-              </div>
-              <div class="flex items-center mt-2.5 mb-5">
-                <span class="flex items-center px-0.5">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.4444 1.55556H12.6667V0.777778C12.6667 0.35 12.3167 0 11.8889 0C11.4611 0 11.1111 0.35 11.1111 0.777778V1.55556H4.88889V0.777778C4.88889 0.35 4.53889 0 4.11111 0C3.68333 0 3.33333 0.35 3.33333 0.777778V1.55556H2.55556C1.69222 1.55556 1.00778 2.25556 1.00778 3.11111L1 14C1 14.8556 1.69222 15.5556 2.55556 15.5556H13.4444C14.3 15.5556 15 14.8556 15 14V3.11111C15 2.25556 14.3 1.55556 13.4444 1.55556ZM13.4444 13.2222C13.4444 13.65 13.0944 14 12.6667 14H3.33333C2.90556 14 2.55556 13.65 2.55556 13.2222V5.44444H13.4444V13.2222ZM5.66667 8.55556V7H4.11111V8.55556H5.66667ZM7.22222 7H8.77778V8.55556H7.22222V7ZM11.8889 7H10.3333V8.55556H11.8889V7Z" fill="#444444" fill-opacity="0.7"/></svg>
-                  ______
-                </span>
-                <span class="flex items-center px-0.5">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346632 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C15.9973 5.8791 15.1535 3.84586 13.6538 2.34616C12.1541 0.846462 10.1209 0.00273077 8 0ZM7.31198 1.92303H8.68803V4.10062H7.31198V1.92303ZM4.10063 8.68802H1.92303V7.31197H4.10063V8.68802ZM4.75597 5.72952L3.20792 4.18147L4.18147 3.20791L5.72952 4.75597L4.75597 5.72952ZM8 10.0176C7.69791 10.0171 7.39978 9.94881 7.12762 9.81769C6.85546 9.68657 6.61621 9.49602 6.42754 9.26008C6.23887 9.02414 6.10559 8.74885 6.03754 8.45452C5.96948 8.16018 5.96839 7.85433 6.03435 7.55952C6.1003 7.26471 6.23161 6.98847 6.4186 6.75119C6.60558 6.51392 6.84346 6.32166 7.11467 6.1886C7.38589 6.05555 7.68353 5.9851 7.98561 5.98245C8.2877 5.9798 8.58652 6.04502 8.86003 6.17329L11.8185 3.21479L12.7921 4.18835L9.8267 7.13997C9.97313 7.44747 10.0391 7.7871 10.0185 8.12706C9.99787 8.46702 9.8913 8.79618 9.70877 9.08372C9.52625 9.37126 9.27373 9.60778 8.97487 9.77112C8.67601 9.93445 8.34058 10.0193 8 10.0176ZM14.077 8.68802H11.8994V7.31197H14.077V8.68802Z" fill="#444444" fill-opacity="0.7"/></svg>
-                  ______
-                </span>
-                <span class="flex items-center px-0.5">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58386 0 0 3.58386 0 8C0 12.4161 3.58386 16 8 16C12.4161 16 16 12.4161 16 8C16 3.58386 12.4161 0 8 0ZM12.0594 8.39066C12.0594 8.67941 11.8217 8.9172 11.5329 8.9172H8.39066V11.2781C8.39066 11.5669 8.15287 11.8047 7.86412 11.8047C7.57537 11.8047 7.33758 11.5669 7.33758 11.2781V8.9172H4.97665V11.2781C4.97665 11.5669 4.73885 11.8047 4.45011 11.8047C4.16136 11.8047 3.92357 11.5669 3.92357 11.2781V4.72187C3.92357 4.43312 4.16136 4.19533 4.45011 4.19533C4.73885 4.19533 4.97665 4.43312 4.97665 4.72187V7.86412H7.33758V4.72187C7.33758 4.43312 7.57537 4.19533 7.86412 4.19533C8.15287 4.19533 8.39066 4.43312 8.39066 4.72187V7.86412H11.0064V4.72187C11.0064 4.43312 11.2442 4.19533 11.5329 4.19533C11.8217 4.19533 12.0594 4.43312 12.0594 4.72187V8.39066Z" fill="#444444" fill-opacity="0.7"/></svg>
-                    ______
-                </span>
-              </div>
-              <div class="flex items-center justify-between">
-                  <span class="text-2xl font-bold text-gray-900 dark:text-white">carregando</span>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3536 20.1307C12.5936 20.8207 11.4236 20.8207 10.6636 20.1207L10.5536 20.0207C5.30357 15.2707 1.87357 12.1607 2.00357 8.28065C2.06357 6.58065 2.93357 4.95065 4.34357 3.99065C6.98357 2.19065 10.2436 3.03065 12.0036 5.09065C13.7636 3.03065 17.0236 2.18065 19.6636 3.99065C21.0736 4.95065 21.9436 6.58065 22.0036 8.28065C22.1436 12.1607 18.7036 15.2707 13.4536 20.0407L13.3536 20.1307Z" fill="white" stroke="#7D28F7"/></svg>
-              </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="container flex flex-wrap place-content-between " >
-
-      <div *ngFor="let cars_list of cars" class=" m-6  max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-
-        <figure class="relative max-w-sm  cursor-pointer ">
+    <div
+      class="container flex flex-wrap place-content-between"
+      *ngIf="this.loadingService.loading$ | async"
+    >
+      <div
+        *repeat="24"
+        class="m-6 max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      >
+        <figure class="relative max-w-sm cursor-pointer">
           <a href="#">
-            <img  src="{{ cars_list.images[0].value  }}" alt="Descrição do carro">
+            <img src="/assets/foto.png" alt="Descrição do carro" />
           </a>
-          <figcaption class="absolute px-4 text-lg   bottom-6 bg-white rounded-r-md">
-            <div class="flex flex-wrap  items-center  ">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 6.03338C3 3.25064 5.25064 1 8.03338 1C10.8161 1 13.0668 3.25064 13.0668 6.03338C13.0668 9.03184 9.88855 13.1664 8.58706 14.7411C8.29944 15.0863 7.77453 15.0863 7.4869 14.7411C6.17822 13.1664 3 9.03184 3 6.03338ZM6.23575 6.03339C6.23575 7.02568 7.04109 7.83102 8.03339 7.83102C9.02568 7.83102 9.83102 7.02568 9.83102 6.03339C9.83102 5.04109 9.02568 4.23575 8.03339 4.23575C7.04109 4.23575 6.23575 5.04109 6.23575 6.03339Z" fill="#7D28F7"/>
+          <figcaption
+            class="absolute px-4 text-lg bottom-6 bg-white rounded-r-md"
+          >
+            <div class="flex flex-wrap items-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 6.03338C3 3.25064 5.25064 1 8.03338 1C10.8161 1 13.0668 3.25064 13.0668 6.03338C13.0668 9.03184 9.88855 13.1664 8.58706 14.7411C8.29944 15.0863 7.77453 15.0863 7.4869 14.7411C6.17822 13.1664 3 9.03184 3 6.03338ZM6.23575 6.03339C6.23575 7.02568 7.04109 7.83102 8.03339 7.83102C9.02568 7.83102 9.83102 7.02568 9.83102 6.03339C9.83102 5.04109 9.02568 4.23575 8.03339 4.23575C7.04109 4.23575 6.23575 5.04109 6.23575 6.03339Z"
+                  fill="#7D28F7"
+                />
               </svg>
-              <!-- {{ cars_list.loja_cidade }} -->
-              </div>
+              ______
+            </div>
           </figcaption>
         </figure>
 
-        <div class="px-5 pb-5 ">
-            <a href="#">
-                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{{ cars_list.brand}}  {{  cars_list.name}} </h5>
-            </a>
-            <div class="flex flex-wrap text-sm items-center mt-2.5 mb-5">
-              {{  cars_list.skus[0].complementName }}
+        <div class="px-5 pb-5">
+          <a href="#">
+            <h5
+              class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+            >
+              ______
+            </h5>
+          </a>
+          <div class="flex flex-wrap text-sm items-center mt-2.5 mb-5">
+            ______
+          </div>
+          <div class="flex items-center mt-2.5 mb-5">
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.4444 1.55556H12.6667V0.777778C12.6667 0.35 12.3167 0 11.8889 0C11.4611 0 11.1111 0.35 11.1111 0.777778V1.55556H4.88889V0.777778C4.88889 0.35 4.53889 0 4.11111 0C3.68333 0 3.33333 0.35 3.33333 0.777778V1.55556H2.55556C1.69222 1.55556 1.00778 2.25556 1.00778 3.11111L1 14C1 14.8556 1.69222 15.5556 2.55556 15.5556H13.4444C14.3 15.5556 15 14.8556 15 14V3.11111C15 2.25556 14.3 1.55556 13.4444 1.55556ZM13.4444 13.2222C13.4444 13.65 13.0944 14 12.6667 14H3.33333C2.90556 14 2.55556 13.65 2.55556 13.2222V5.44444H13.4444V13.2222ZM5.66667 8.55556V7H4.11111V8.55556H5.66667ZM7.22222 7H8.77778V8.55556H7.22222V7ZM11.8889 7H10.3333V8.55556H11.8889V7Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              ______
+            </span>
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346632 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C15.9973 5.8791 15.1535 3.84586 13.6538 2.34616C12.1541 0.846462 10.1209 0.00273077 8 0ZM7.31198 1.92303H8.68803V4.10062H7.31198V1.92303ZM4.10063 8.68802H1.92303V7.31197H4.10063V8.68802ZM4.75597 5.72952L3.20792 4.18147L4.18147 3.20791L5.72952 4.75597L4.75597 5.72952ZM8 10.0176C7.69791 10.0171 7.39978 9.94881 7.12762 9.81769C6.85546 9.68657 6.61621 9.49602 6.42754 9.26008C6.23887 9.02414 6.10559 8.74885 6.03754 8.45452C5.96948 8.16018 5.96839 7.85433 6.03435 7.55952C6.1003 7.26471 6.23161 6.98847 6.4186 6.75119C6.60558 6.51392 6.84346 6.32166 7.11467 6.1886C7.38589 6.05555 7.68353 5.9851 7.98561 5.98245C8.2877 5.9798 8.58652 6.04502 8.86003 6.17329L11.8185 3.21479L12.7921 4.18835L9.8267 7.13997C9.97313 7.44747 10.0391 7.7871 10.0185 8.12706C9.99787 8.46702 9.8913 8.79618 9.70877 9.08372C9.52625 9.37126 9.27373 9.60778 8.97487 9.77112C8.67601 9.93445 8.34058 10.0193 8 10.0176ZM14.077 8.68802H11.8994V7.31197H14.077V8.68802Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              ______
+            </span>
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.58386 0 0 3.58386 0 8C0 12.4161 3.58386 16 8 16C12.4161 16 16 12.4161 16 8C16 3.58386 12.4161 0 8 0ZM12.0594 8.39066C12.0594 8.67941 11.8217 8.9172 11.5329 8.9172H8.39066V11.2781C8.39066 11.5669 8.15287 11.8047 7.86412 11.8047C7.57537 11.8047 7.33758 11.5669 7.33758 11.2781V8.9172H4.97665V11.2781C4.97665 11.5669 4.73885 11.8047 4.45011 11.8047C4.16136 11.8047 3.92357 11.5669 3.92357 11.2781V4.72187C3.92357 4.43312 4.16136 4.19533 4.45011 4.19533C4.73885 4.19533 4.97665 4.43312 4.97665 4.72187V7.86412H7.33758V4.72187C7.33758 4.43312 7.57537 4.19533 7.86412 4.19533C8.15287 4.19533 8.39066 4.43312 8.39066 4.72187V7.86412H11.0064V4.72187C11.0064 4.43312 11.2442 4.19533 11.5329 4.19533C11.8217 4.19533 12.0594 4.43312 12.0594 4.72187V8.39066Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              ______
+            </span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-2xl font-bold text-gray-900 dark:text-white"
+              >carregando</span
+            >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.3536 20.1307C12.5936 20.8207 11.4236 20.8207 10.6636 20.1207L10.5536 20.0207C5.30357 15.2707 1.87357 12.1607 2.00357 8.28065C2.06357 6.58065 2.93357 4.95065 4.34357 3.99065C6.98357 2.19065 10.2436 3.03065 12.0036 5.09065C13.7636 3.03065 17.0236 2.18065 19.6636 3.99065C21.0736 4.95065 21.9436 6.58065 22.0036 8.28065C22.1436 12.1607 18.7036 15.2707 13.4536 20.0407L13.3536 20.1307Z"
+                fill="white"
+                stroke="#7D28F7"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex flex-wrap place-content-between">
+      <div
+        *ngFor="let cars_list of cars"
+        class="m-6 max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      >
+        <figure class="relative max-w-sm cursor-pointer">
+          <a href="#">
+            <img
+              src="{{ cars_list.images[0].value }}"
+              alt="Descrição do carro"
+            />
+          </a>
+          <figcaption
+            class="absolute px-4 text-lg bottom-6 bg-white rounded-r-md"
+          >
+            <div class="flex flex-wrap items-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3 6.03338C3 3.25064 5.25064 1 8.03338 1C10.8161 1 13.0668 3.25064 13.0668 6.03338C13.0668 9.03184 9.88855 13.1664 8.58706 14.7411C8.29944 15.0863 7.77453 15.0863 7.4869 14.7411C6.17822 13.1664 3 9.03184 3 6.03338ZM6.23575 6.03339C6.23575 7.02568 7.04109 7.83102 8.03339 7.83102C9.02568 7.83102 9.83102 7.02568 9.83102 6.03339C9.83102 5.04109 9.02568 4.23575 8.03339 4.23575C7.04109 4.23575 6.23575 5.04109 6.23575 6.03339Z"
+                  fill="#7D28F7"
+                />
+              </svg>
+              <!-- {{ cars_list.loja_cidade }} -->
             </div>
-            <div class="flex items-center mt-2.5 mb-5">
-              <span class="flex items-center px-0.5">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.4444 1.55556H12.6667V0.777778C12.6667 0.35 12.3167 0 11.8889 0C11.4611 0 11.1111 0.35 11.1111 0.777778V1.55556H4.88889V0.777778C4.88889 0.35 4.53889 0 4.11111 0C3.68333 0 3.33333 0.35 3.33333 0.777778V1.55556H2.55556C1.69222 1.55556 1.00778 2.25556 1.00778 3.11111L1 14C1 14.8556 1.69222 15.5556 2.55556 15.5556H13.4444C14.3 15.5556 15 14.8556 15 14V3.11111C15 2.25556 14.3 1.55556 13.4444 1.55556ZM13.4444 13.2222C13.4444 13.65 13.0944 14 12.6667 14H3.33333C2.90556 14 2.55556 13.65 2.55556 13.2222V5.44444H13.4444V13.2222ZM5.66667 8.55556V7H4.11111V8.55556H5.66667ZM7.22222 7H8.77778V8.55556H7.22222V7ZM11.8889 7H10.3333V8.55556H11.8889V7Z" fill="#444444" fill-opacity="0.7"/></svg>
-                  {{ cars_list.year }}
-              </span>
-              <span class="flex items-center px-0.5">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346632 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C15.9973 5.8791 15.1535 3.84586 13.6538 2.34616C12.1541 0.846462 10.1209 0.00273077 8 0ZM7.31198 1.92303H8.68803V4.10062H7.31198V1.92303ZM4.10063 8.68802H1.92303V7.31197H4.10063V8.68802ZM4.75597 5.72952L3.20792 4.18147L4.18147 3.20791L5.72952 4.75597L4.75597 5.72952ZM8 10.0176C7.69791 10.0171 7.39978 9.94881 7.12762 9.81769C6.85546 9.68657 6.61621 9.49602 6.42754 9.26008C6.23887 9.02414 6.10559 8.74885 6.03754 8.45452C5.96948 8.16018 5.96839 7.85433 6.03435 7.55952C6.1003 7.26471 6.23161 6.98847 6.4186 6.75119C6.60558 6.51392 6.84346 6.32166 7.11467 6.1886C7.38589 6.05555 7.68353 5.9851 7.98561 5.98245C8.2877 5.9798 8.58652 6.04502 8.86003 6.17329L11.8185 3.21479L12.7921 4.18835L9.8267 7.13997C9.97313 7.44747 10.0391 7.7871 10.0185 8.12706C9.99787 8.46702 9.8913 8.79618 9.70877 9.08372C9.52625 9.37126 9.27373 9.60778 8.97487 9.77112C8.67601 9.93445 8.34058 10.0193 8 10.0176ZM14.077 8.68802H11.8994V7.31197H14.077V8.68802Z" fill="#444444" fill-opacity="0.7"/></svg>
-                  {{ cars_list.extraData[1].value }}
-              </span>
-              <span class="flex items-center px-0.5">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58386 0 0 3.58386 0 8C0 12.4161 3.58386 16 8 16C12.4161 16 16 12.4161 16 8C16 3.58386 12.4161 0 8 0ZM12.0594 8.39066C12.0594 8.67941 11.8217 8.9172 11.5329 8.9172H8.39066V11.2781C8.39066 11.5669 8.15287 11.8047 7.86412 11.8047C7.57537 11.8047 7.33758 11.5669 7.33758 11.2781V8.9172H4.97665V11.2781C4.97665 11.5669 4.73885 11.8047 4.45011 11.8047C4.16136 11.8047 3.92357 11.5669 3.92357 11.2781V4.72187C3.92357 4.43312 4.16136 4.19533 4.45011 4.19533C4.73885 4.19533 4.97665 4.43312 4.97665 4.72187V7.86412H7.33758V4.72187C7.33758 4.43312 7.57537 4.19533 7.86412 4.19533C8.15287 4.19533 8.39066 4.43312 8.39066 4.72187V7.86412H11.0064V4.72187C11.0064 4.43312 11.2442 4.19533 11.5329 4.19533C11.8217 4.19533 12.0594 4.43312 12.0594 4.72187V8.39066Z" fill="#444444" fill-opacity="0.7"/></svg>
-                  <!-- {{ cars_list.textAttributes.originalKey}} -->
-              </span>
-            </div>
-            <div class="flex items-center justify-between">
-                <span class="text-2xl font-bold text-gray-900 dark:text-white">{{ cars_list.spotPrice  | currency:'BRL'  }}</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3536 20.1307C12.5936 20.8207 11.4236 20.8207 10.6636 20.1207L10.5536 20.0207C5.30357 15.2707 1.87357 12.1607 2.00357 8.28065C2.06357 6.58065 2.93357 4.95065 4.34357 3.99065C6.98357 2.19065 10.2436 3.03065 12.0036 5.09065C13.7636 3.03065 17.0236 2.18065 19.6636 3.99065C21.0736 4.95065 21.9436 6.58065 22.0036 8.28065C22.1436 12.1607 18.7036 15.2707 13.4536 20.0407L13.3536 20.1307Z" fill="white" stroke="#7D28F7"/></svg>
-            </div>
+          </figcaption>
+        </figure>
+
+        <div class="px-5 pb-5">
+          <a href="#">
+            <h5
+              class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white"
+            >
+              {{ cars_list.brand }} {{ cars_list.name }}
+            </h5>
+          </a>
+          <div class="flex flex-wrap text-sm items-center mt-2.5 mb-5">
+            {{ cars_list.skus[0].complementName }}
+          </div>
+          <div class="flex items-center mt-2.5 mb-5">
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M13.4444 1.55556H12.6667V0.777778C12.6667 0.35 12.3167 0 11.8889 0C11.4611 0 11.1111 0.35 11.1111 0.777778V1.55556H4.88889V0.777778C4.88889 0.35 4.53889 0 4.11111 0C3.68333 0 3.33333 0.35 3.33333 0.777778V1.55556H2.55556C1.69222 1.55556 1.00778 2.25556 1.00778 3.11111L1 14C1 14.8556 1.69222 15.5556 2.55556 15.5556H13.4444C14.3 15.5556 15 14.8556 15 14V3.11111C15 2.25556 14.3 1.55556 13.4444 1.55556ZM13.4444 13.2222C13.4444 13.65 13.0944 14 12.6667 14H3.33333C2.90556 14 2.55556 13.65 2.55556 13.2222V5.44444H13.4444V13.2222ZM5.66667 8.55556V7H4.11111V8.55556H5.66667ZM7.22222 7H8.77778V8.55556H7.22222V7ZM11.8889 7H10.3333V8.55556H11.8889V7Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              {{ cars_list.year }}
+            </span>
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346632 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C15.9973 5.8791 15.1535 3.84586 13.6538 2.34616C12.1541 0.846462 10.1209 0.00273077 8 0ZM7.31198 1.92303H8.68803V4.10062H7.31198V1.92303ZM4.10063 8.68802H1.92303V7.31197H4.10063V8.68802ZM4.75597 5.72952L3.20792 4.18147L4.18147 3.20791L5.72952 4.75597L4.75597 5.72952ZM8 10.0176C7.69791 10.0171 7.39978 9.94881 7.12762 9.81769C6.85546 9.68657 6.61621 9.49602 6.42754 9.26008C6.23887 9.02414 6.10559 8.74885 6.03754 8.45452C5.96948 8.16018 5.96839 7.85433 6.03435 7.55952C6.1003 7.26471 6.23161 6.98847 6.4186 6.75119C6.60558 6.51392 6.84346 6.32166 7.11467 6.1886C7.38589 6.05555 7.68353 5.9851 7.98561 5.98245C8.2877 5.9798 8.58652 6.04502 8.86003 6.17329L11.8185 3.21479L12.7921 4.18835L9.8267 7.13997C9.97313 7.44747 10.0391 7.7871 10.0185 8.12706C9.99787 8.46702 9.8913 8.79618 9.70877 9.08372C9.52625 9.37126 9.27373 9.60778 8.97487 9.77112C8.67601 9.93445 8.34058 10.0193 8 10.0176ZM14.077 8.68802H11.8994V7.31197H14.077V8.68802Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              {{ cars_list.extraData[1].value }}
+            </span>
+            <span class="flex items-center px-0.5">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 0C3.58386 0 0 3.58386 0 8C0 12.4161 3.58386 16 8 16C12.4161 16 16 12.4161 16 8C16 3.58386 12.4161 0 8 0ZM12.0594 8.39066C12.0594 8.67941 11.8217 8.9172 11.5329 8.9172H8.39066V11.2781C8.39066 11.5669 8.15287 11.8047 7.86412 11.8047C7.57537 11.8047 7.33758 11.5669 7.33758 11.2781V8.9172H4.97665V11.2781C4.97665 11.5669 4.73885 11.8047 4.45011 11.8047C4.16136 11.8047 3.92357 11.5669 3.92357 11.2781V4.72187C3.92357 4.43312 4.16136 4.19533 4.45011 4.19533C4.73885 4.19533 4.97665 4.43312 4.97665 4.72187V7.86412H7.33758V4.72187C7.33758 4.43312 7.57537 4.19533 7.86412 4.19533C8.15287 4.19533 8.39066 4.43312 8.39066 4.72187V7.86412H11.0064V4.72187C11.0064 4.43312 11.2442 4.19533 11.5329 4.19533C11.8217 4.19533 12.0594 4.43312 12.0594 4.72187V8.39066Z"
+                  fill="#444444"
+                  fill-opacity="0.7"
+                />
+              </svg>
+              <!-- {{ cars_list.textAttributes.originalKey}} -->
+            </span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-2xl font-bold text-gray-900 dark:text-white">{{
+              cars_list.spotPrice | currency: 'BRL'
+            }}</span>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.3536 20.1307C12.5936 20.8207 11.4236 20.8207 10.6636 20.1207L10.5536 20.0207C5.30357 15.2707 1.87357 12.1607 2.00357 8.28065C2.06357 6.58065 2.93357 4.95065 4.34357 3.99065C6.98357 2.19065 10.2436 3.03065 12.0036 5.09065C13.7636 3.03065 17.0236 2.18065 19.6636 3.99065C21.0736 4.95065 21.9436 6.58065 22.0036 8.28065C22.1436 12.1607 18.7036 15.2707 13.4536 20.0407L13.3536 20.1307Z"
+                fill="white"
+                stroke="#7D28F7"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mx-auto  px-6 py-8  text-center">
-    <div class=" text-lg">
-      Você já viu {{ sum }} de {{ total }} veículos
-    </div>
-    <a infinite-scroll (click)="onScrollDown()" class="hover:cursor-pointer inline-flex items-center text-purple text-lg hover:underline font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+  <div class="container mx-auto px-6 py-8 text-center">
+    <div class="text-lg">Você já viu {{ sum }} de {{ total }} veículos</div>
+    <a
+      infinite-scroll
+      (click)="onScrollDown()"
+      class="hover:cursor-pointer inline-flex items-center text-purple text-lg hover:underline font-normal text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+    >
       Carregar mais
-      <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.875 9.55478L11.995 13.674L8.11498 9.55478C7.92814 9.35598 7.67449 9.24426 7.40998 9.24426C7.14546 9.24426 6.89181 9.35598 6.70498 9.55478C6.31498 9.96882 6.31498 10.6377 6.70498 11.0517L11.295 15.9247C11.685 16.3387 12.315 16.3387 12.705 15.9247L17.295 11.0517C17.685 10.6377 17.685 9.96882 17.295 9.55478C16.905 9.15135 16.265 9.14074 15.875 9.55478Z" fill="#7D28F7"/>
+      <svg
+        width="24"
+        height="26"
+        viewBox="0 0 24 26"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.875 9.55478L11.995 13.674L8.11498 9.55478C7.92814 9.35598 7.67449 9.24426 7.40998 9.24426C7.14546 9.24426 6.89181 9.35598 6.70498 9.55478C6.31498 9.96882 6.31498 10.6377 6.70498 11.0517L11.295 15.9247C11.685 16.3387 12.315 16.3387 12.705 15.9247L17.295 11.0517C17.685 10.6377 17.685 9.96882 17.295 9.55478C16.905 9.15135 16.265 9.14074 15.875 9.55478Z"
+          fill="#7D28F7"
+        />
       </svg>
     </a>
   </div>
